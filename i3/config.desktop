@@ -36,7 +36,7 @@ bindsym $mod+Shift+c kill
 bindsym $mod+Shift+x exec slimlock
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run -fn 'DejaVu Sans Mono for Powerline-9'
+bindsym $mod+d exec rofi -show run -lines 5
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
