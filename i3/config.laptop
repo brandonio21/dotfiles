@@ -166,10 +166,15 @@ bindsym $mod+r mode "resize"
 # client.focused_inactive #333333 #5f676a #ffffff #484e50
 # client.unfocused        #333333 #222222 #888888 #292d2e
 # client.urgent           #2f343a #900000 #ffffff #900000
-client.focused          #33ADFF #33ADff #ffffff #33ADFF
-client.focused_inactive #BDC0C1 #BDC0C1 #ffffff #484e50
-client.unfocused        #333333 #222222 #888888 #292d2e
-client.urgent           #2f343a #900000 #ffffff #900000
+#client.focused          #33ADFF #33ADff #ffffff #33ADFF
+#client.focused_inactive #BDC0C1 #BDC0C1 #ffffff #484e50
+#client.unfocused        #333333 #222222 #888888 #292d2e
+#client.urgent           #2f343a #900000 #ffffff #900000
+# Solarized
+client.focused          #B58900 #B58900 #ffffff #B58900
+client.focused_inactive #93A1A1 #93A1A1 #ffffff #93A1A1
+client.unfocused        #586E75 #586E75 #888888 #586E75
+client.urgent           #DC322F #DC322F #ffffff #DC322F
 
 
 # Start i3bar to display a workspace bar (plus the system information i3status
@@ -184,15 +189,15 @@ bar {
 
 	colors
 	{
-		background #000000
+		background #002B36
 		statusline #ffffff
-		focused_workspace          #33ADFF #33ADff #ffffff #33ADFF
-		active_workspace  	#BDC0C1 #BDC0C1 #ffffff #BDC0C1
+		focused_workspace       #B58900 #002B36 #839496 #33ADFF
+		inactive_workspace  	#073642 #002B36 #839496 #BDC0C1
 	}
 }
 
 # fix the gap issue
-for_window [class="^.*"] border pixel 5
+for_window [class="^.*"] border pixel 3
 
 exec --no-startup-id redshift &
 exec --no-startup-id compton -b
