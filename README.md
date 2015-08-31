@@ -15,3 +15,12 @@ This repo contains settings for the following:
 * vim
 * i3wm
 * bash
+
+
+Screenshots
+-----------
+![Bare Desktop](screenshots/bare.png)
+
+![Launching a program](screenshots/busylaunch.png)
+
+![Viewing Top](screenshots/top.png)

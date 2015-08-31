@@ -10,10 +10,8 @@ before coding starts.
 * Uses termite for terminal
 * Uses slimlock for lock screen
 * Uses feh to set the arch wallpaper
+* Uses rofi to launch applications
 
 ![preview](preview.png "Brandon's i3 preview")
 
-
-## Installation ##
-Run `install.sh`.
 
