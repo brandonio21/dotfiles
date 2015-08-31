@@ -48,3 +48,7 @@ git clone https://github.com/Lokaltog/powerline-fonts.git vim/powerline-fonts
 vim/powerline-fonts/install.sh
 mkdir ~/.vim
 cp -r vim/* ~/.vim
+
+printf "%s: " "What is your GitHub username?"
+read githubUser
+`git config --global github.user ${githubUser}`

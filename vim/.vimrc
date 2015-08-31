@@ -18,8 +18,10 @@ Plug 'https://github.com/scrooloose/nerdtree.git', {'on' : 'NERDTreeToggle' }
          " ^ NERD Tree to browse files. Setup to load on demand.
 Plug 'https://github.com/ervandew/supertab.git' " Tab completion
 Plug 'https://github.com/terryma/vim-multiple-cursors.git' " Sublime like cursors
-Plug 'https://github.com/bruno-/vim-man.git' " Man pages
 Plug 'https://github.com/rust-lang/rust.vim' "Rust syntax highlighting
+Plug 'https://github.com/kien/ctrlp.vim' "Fuzzy file searcher
+Plug 'https://github.com/mattn/gist-vim' "Gist poster
+Plug 'https://github.com/mattn/webapi-vim' "Gist poster Web API component
 
 call plug#end()
 filetype plugin indent on
