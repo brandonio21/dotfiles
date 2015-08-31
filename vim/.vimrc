@@ -78,6 +78,9 @@ au BufRead,BufNewFile *.{c,h,java,php,cpp,jsp,pp,hpp} set expandtab
 au BufRead,BufNewFile *.{c,h,java,php,cpp,jsp,pp,hpp} set shiftwidth=2
 au BufRead,BufNewFile *.{c,h,java,php,cpp,jsp,pp,hpp} set tabstop=2
 
+" Python rules
+au BufRead,BufNewFile *.py set tabstop=8 expandtab shiftwidth=4 softtabstop=4
+
 " Do not expand tabs in assembly file.  Make them 8 chars wide.
 au BufRead,BufNewFile *.s set noexpandtab
 au BufRead,BufNewFile *.s set shiftwidth=8
