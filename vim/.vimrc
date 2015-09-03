@@ -112,3 +112,6 @@ map <C-b> :NERDTreeToggle<CR>
 
 " Taglist Toggle
 map <C-t> :TlistToggle<CR>
+
+" Make it so F2 toggles paste
+set pastetoggle=<F2>
