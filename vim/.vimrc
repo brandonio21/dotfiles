@@ -101,17 +101,20 @@ colorscheme solarized
 " For switching between many opened file by using ctrl+l or ctrl+h
 map <C-L> :next <CR>
 map <C-H> :prev <CR>
-" map <C-H> :tabprev <CR> map <C-L> :tabnext <CR>
+
+" Tab Mappings
+map <C-t> :tabnew <CR>
+
 
 " Spelling toggle via F10 and F11
-map <F10> :setlocal spell spelllang=en_us<CR>
-map <F11> :setlocal nospell<CR>
+map <F3> :setlocal spell spelllang=en_us<CR>
+map <F4> :setlocal nospell<CR>
 
 " NERD Tree keybindings
 map <C-b> :NERDTreeToggle<CR>
 
 " Taglist Toggle
-map <C-t> :TlistToggle<CR>
+" map <C-t> :TlistToggle<CR>
 
 " Make it so F2 toggles paste
 set pastetoggle=<F2>
