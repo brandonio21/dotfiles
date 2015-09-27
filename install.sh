@@ -11,7 +11,7 @@ cp i3/conkyrc.${machine} i3/conkyrc
 printf "%s\n%s\n" "[DONE]" "Copyring BASHRC file"
 cp .bashrc ~/.bashrc
 printf "%s\n" "Prompting PACAUR for proper pacakges"
-pacaur -S conky feh i3-wm i3status ttf-font-awesome dzen2 curl xbacklight dropbox-cli rofi
+pacaur -S conky feh i3-wm i3status ttf-font-awesome dzen2 curl dropbox-cli rofi-git
 
 printf "%s (y/n)" "Would you like to install useless gaps?"
 read gapsAnswer
@@ -22,8 +22,8 @@ fi
 printf "%s (y/n)" "Would you like to fix Dropbox file limitations?"
 read dropboxAnswer
 if [ "$dropboxAnswer" == "y" ]; then
-	`echo "fs.inotify.max_user_watches=100000" | sudo tee -a /etc/sysctl.d/99-sysctl.conf`
-	`sudo sysctl --system`
+	echo "fs.inotify.max_user_watches=100000" | sudo tee -a /etc/sysctl.d/99-sysctl.conf
+	sudo sysctl --system
 fi
 
 printf "%s: " "What is your gmail email?"
@@ -33,21 +33,21 @@ read -s gmailPassword
 echo "#!/bin/bash" > "${PWD}/i3/bin/gmail.sh"
 echo "EMAIL=${gmailEmail}" >> "${PWD}/i3/bin/gmail.sh"
 echo "DETAILS=${gmailPassword}" >> "${PWD}/i3/bin/gmail.sh"
-`cat "${PWD}/bin/gmailTemplate.sh" >> "${PWD}/i3/bin/gmail.sh"`
+`cat "${PWD}/i3/bin/gmailTemplate.sh" >> "${PWD}/i3/bin/gmail.sh"`
 chmod +x "${PWD}/i3/bin/gmail.sh"
 
 fc-cache -vf
-mkdir ~/.i3
-cp -r i3/* ~/.i3
+rm -rf ~/.i3
+cp -r i3/ ~ && mv ~/i3 ~/.i3
 
 printf "%s\n" "Installing vim features"
 curl -fLo vim/autoload/plug.vim --create-dirs \
 	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-vim +PlugInstall +qall
 git clone https://github.com/Lokaltog/powerline-fonts.git vim/powerline-fonts
 vim/powerline-fonts/install.sh
-mkdir ~/.vim
-cp -r vim/* ~/.vim
+rm -rf ~/.vim
+cp -r vim/ ~ && mv ~/vim ~/.vim && cp ~/.vim/.vimrc ~/.vimrc
+vim +PlugInstall +qall
 
 printf "%s: " "What is your GitHub username?"
 read githubUser

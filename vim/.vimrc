@@ -22,7 +22,6 @@ Plug 'https://github.com/rust-lang/rust.vim' "Rust syntax highlighting
 Plug 'https://github.com/kien/ctrlp.vim' "Fuzzy file searcher
 Plug 'https://github.com/mattn/gist-vim' "Gist poster
 Plug 'https://github.com/mattn/webapi-vim' "Gist poster Web API component
-Plug 'https://github.com/vim-scripts/taglist.vim' "Taglist
 
 call plug#end()
 filetype plugin indent on
