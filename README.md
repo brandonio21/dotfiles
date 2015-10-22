@@ -13,6 +13,7 @@ stow i3
 stow x
 stow termite
 stow bash
+```
 
 
 Details
