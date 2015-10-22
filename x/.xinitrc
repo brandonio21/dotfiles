@@ -23,5 +23,4 @@ else
 	cat $HOME/.i3/config.laptop > $HOME/.i3/config
 fi
 
-
-exec $1
+exec i3
