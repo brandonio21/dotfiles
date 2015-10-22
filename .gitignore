@@ -1,7 +1,7 @@
 i3/bin/gmail.sh
 *.swp
-i3/config
-i3/conkyrc
+i3/.i3/config
+i3/.i3/conkyrc
 vim/powerline-fonts
 vim/autoload
 vim/plugged
