@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/brandon/Dropbox/Rust/projects/fib_term/.git'
+let g:netrw_dirhist_2='/home/brandon/Dropbox/Rust/projects/guessing_game'
+let g:netrw_dirhist_3='/home/brandon/Dropbox/WiC-BPC-Sp15/ContestFiles'
+let g:netrw_dirhist_4='/home/brandon/Dropbox/Python/projects/pycframework/Solutions/dev/conf'
+let g:netrw_dirhist_5='/home/brandon/.config/termite'
