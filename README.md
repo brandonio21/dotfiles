@@ -6,7 +6,13 @@ you're more than welcome to.
 
 Installation
 ------------
-To install, simply `./install.sh` and follow the prompts.
+To install, run the configuration file and use GNU stow.  
+```
+./configure.sh
+stow i3
+stow x
+stow termite
+stow bash
 
 
 Details
@@ -15,6 +21,7 @@ This repo contains settings for the following:
 * vim
 * i3wm
 * bash
+* termite
 
 
 Screenshots
