@@ -15,7 +15,6 @@ stow termite
 stow bash
 ```
 
-
 Details
 -------
 This repo contains settings for the following:  
@@ -23,6 +22,11 @@ This repo contains settings for the following:
 * i3wm
 * bash
 * termite
+
+Dependencies
+------------
+Note that currently this repo has no way of installing dependencies. Will work
+on this soon
 
 
 Screenshots
