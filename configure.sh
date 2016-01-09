@@ -3,6 +3,11 @@
 # Move the template to the actual conkyrc file
 cp i3/.i3/conkyrc.template i3/.i3/conkyrc
 
+# Download the wallpapers
+wget https://dl.dropboxusercontent.com/u/398377/wallpapers/wallpapers.zip
+unzip wallpapers.zip -d i3/.i3/wallpapers
+rm wallpapers.zip
+
 # Replace the wireless card for the conky configuration
 wirelessCard=$(ip link | egrep "[0-9]+: .+: " | cut -d " " -f 2 | egrep "w.+")
 ethernetCard=$(ip link | egrep "[0-9]+: .+: " | cut -d " " -f 2 | egrep "e.+")
