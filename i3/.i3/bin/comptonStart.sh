@@ -2,4 +2,4 @@
 sleep 1
 nvidia-settings --load-config-only
 sleep 1
-compton -b
+compton $HOME/.compton.conf -b
