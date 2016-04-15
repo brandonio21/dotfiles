@@ -33,7 +33,7 @@ bindsym $mod+Return exec termite -c $HOME/.i3/.config/termite/config
 bindsym $mod+Shift+c kill
 
 # Lock the screen
-bindsym $mod+Shift+x exec slimlock
+bindsym $mod+Shift+x exec $HOME/.i3/bin/lock.sh
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec rofi -show run -lines 5
