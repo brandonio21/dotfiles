@@ -8,6 +8,10 @@ wget https://dl.dropboxusercontent.com/u/398377/wallpapers/wallpapers.zip
 unzip wallpapers.zip -d i3/.i3/wallpapers
 rm wallpapers.zip
 
+git clone https://github.com/powerline/fonts
+fonts/install.sh
+rm -rf fonts
+
 # Replace the wireless card for the conky configuration
 wirelessCard=$(ip link | egrep "[0-9]+: .+: " | cut -d " " -f 2 | egrep "w.+")
 ethernetCard=$(ip link | egrep "[0-9]+: .+: " | cut -d " " -f 2 | egrep "e.+")
