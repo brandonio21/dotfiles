@@ -1,2 +1,2 @@
 #/bin/bash
-echo `amixer  get Master | egrep -o -m 1 "[0-9]+%"`
+echo `amixer -D pulse get Master | egrep -o -m 1 "[0-9]+%"`

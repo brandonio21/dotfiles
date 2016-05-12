@@ -89,7 +89,7 @@ unsetopt HIST_VERIFY
 
 bindkey -v
 
-eval $(dircolors ~/.dircolors)
+#eval $(dircolors ~/.dircolors)
 export PROMPT_COMMAND='echo -ne "\033]0;$PWD\007"'
 export PROJECT_HOME=~/Dropbox/Python/projects
 export WORKON_HOME=~/Dropbox/Python/virtualenvs
