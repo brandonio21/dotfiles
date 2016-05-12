@@ -13,6 +13,7 @@ filetype off
 call plug#begin('~/.vim/plugged') 
 
 Plug 'https://github.com/bling/vim-airline.git' " Statusbar plugin
+Plug 'https://github.com/vim-airline/vim-airline-themes.git' " Themes for airline
 Plug 'https://github.com/flazz/vim-colorschemes.git' " Colorschemes plugin
 Plug 'https://github.com/scrooloose/nerdtree.git', {'on' : 'NERDTreeToggle' } 
          " ^ NERD Tree to browse files. Setup to load on demand.
@@ -96,6 +97,7 @@ syntax on
 " This is my prefered colorscheme.
 "colors solarized
 colorscheme solarized
+let g:airline_theme='solarized'
 
 " For switching between many opened file by using ctrl+l or ctrl+h
 map <C-L> :next <CR>
