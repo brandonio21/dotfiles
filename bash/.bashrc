@@ -24,4 +24,8 @@ fi
 
 export QSYS_ROOTDIR="/home/brandon/altera/15.0/quartus/sopc_builder/bin"
 export ALTERAOCLSDKROOT="/home/brandon/altera/15.0/hld"
+export PROJECT_HOME=~/Dropbox/Python/projects
+export WORKON_HOME=~/Dropbox/Python/virtualenvs
 export TERM=xterm-256color
+export VIRTUALENVWRAPPER_SCRIPT=/usr/bin/virtualenvwrapper.sh
+source /usr/bin/virtualenvwrapper_lazy.sh
