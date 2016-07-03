@@ -28,6 +28,23 @@ Dependencies
 Note that currently this repo has no way of installing dependencies. Will work
 on this soon
 
+Stow-Wrapper
+------------
+In order to solve a small design problem with stow, I have created stow_wrapper.sh,
+which allows the user to create per-package .stowrc files that allow the
+package to go anywhere on the system. Use stow_wrapper.sh whenever installing
+a package like such:
+```
+./stow_wrapper.sh <packageName> <args>
+```
+For instance
+```
+./stow_wrapper.sh netctl
+```
+Or
+```
+./stow_wrapper.sh netctl -D
+```
 
 Screenshots
 -----------
