@@ -3,11 +3,7 @@
 # Move the template to the actual conkyrc file
 cp i3/.i3/conkyrc.template i3/.i3/conkyrc
 
-# Download the wallpapers
-wget https://dl.dropboxusercontent.com/u/398377/wallpapers/wallpapers.zip
-unzip wallpapers.zip -d i3/.i3/wallpapers
-rm wallpapers.zip
-
+# Get fonts
 git clone https://github.com/powerline/fonts
 fonts/install.sh
 rm -rf fonts
