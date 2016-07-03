@@ -1,0 +1,11 @@
+[Unit]
+Description=Dropbox filesync
+Requires=network-online.target
+After=network.target network-online.target
+
+[Service]
+type=simple
+ExecStart=dropbox-cli start
+
+[Install]
+RequiredBy=multi-user.target
