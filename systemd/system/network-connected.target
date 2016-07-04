@@ -1,0 +1,3 @@
+[Unit]
+Description=Network is connected and able to send packets
+After=network-online.target

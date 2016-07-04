@@ -1,0 +1,25 @@
+#!/bin/bash
+function send_notification {
+	su -c "DISPLAY=:0 notify-send \"Network: $1\" --icon=network-$2" brandon
+}
+
+if [[ "$INTERFACE" == "wlp2s0" ]]
+then
+	case "$ACTION" in
+		"CONNECT")
+			send_notification "Connected to $SSID" wireless
+		;;
+		"DISCONNECT")
+			send_notification "Disconnected from $SSID" wireless
+		;;
+	esac
+else
+	case "$IFPLUGD_CURRENT" in
+		"up")
+			send_notification "Connected to $1" wired
+		;;
+		"down")
+			send_notification "Disconnected from $1" wired
+		;;
+	esac
+fi
