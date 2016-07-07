@@ -71,6 +71,10 @@ if ! has('gui_running')
 	augroup END
 endif
 
+if has('gui_running')
+	set guifont=DejaVu\ Sans\ Mono\ for\ Powerline
+endif
+
 
 
 " Change tabs in certain source files to spaces. This list should constantly
