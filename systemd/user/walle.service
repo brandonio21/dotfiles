@@ -5,6 +5,3 @@ After=network-online.target
 [Service]
 Type=oneshot
 ExecStart="/home/brandon/Dropbox/Rust/projects/walle/target/debug/walle"
-
-[Install]
-RequiredBy=default.target
