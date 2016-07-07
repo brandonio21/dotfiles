@@ -4,4 +4,5 @@ After=network-online.target
 
 [Service]
 Type=oneshot
-ExecStart="/home/brandon/Dropbox/Rust/projects/walle/target/debug/walle"
+EnvironmentFile=/home/brandon/.config/walle/walle.conf
+ExecStart=/home/brandon/Dropbox/Rust/projects/walle/target/debug/walle $WALLPAPERDIR $WALLPAPERSJSON $URLSFILE
