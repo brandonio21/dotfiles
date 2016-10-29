@@ -13,6 +13,15 @@ stow i3
 stow x
 stow termite
 stow bash
+stow compton
+stow dunst
+stow pulse
+stow vim
+stow walle
+stow zsh
+cd etc && stow netctl && cd ..
+cd etc && stow download-sweeper && cd ..
+cd systemd && install.sh && cd ..
 ```
 
 Details
@@ -22,12 +31,20 @@ This repo contains settings for the following:
 * i3wm
 * bash
 * termite
+* compton
+* dunst
+* netctl
+* download-sweeper
+* pulse audio
+* walle
+* xorg
+* zsh
+* Some systemd services/timers
 
 Dependencies
 ------------
 Note that currently this repo has no way of installing dependencies. Will work
 on this soon
-
 
 Screenshots
 -----------

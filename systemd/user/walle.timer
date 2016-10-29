@@ -1,0 +1,10 @@
+[Unit]
+Description=Runs walle after ten seconds
+After=network-online.target
+
+[Timer]
+OnBootSec=10s
+Unit=walle.service
+
+[Install]
+WantedBy=default.target

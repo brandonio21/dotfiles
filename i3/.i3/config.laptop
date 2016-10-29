@@ -33,7 +33,7 @@ bindsym $mod+Return exec termite -c $HOME/.i3/.config/termite/config
 bindsym $mod+Shift+c kill
 
 # Lock the screen
-bindsym $mod+Shift+x exec slimlock
+bindsym $mod+Shift+x exec $HOME/.i3/bin/lock.sh
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec rofi -show run -lines 5
@@ -200,7 +200,7 @@ bar {
 for_window [class="^.*"] border pixel 3
 
 exec --no-startup-id redshift &
-exec --no-startup-id compton -b
+exec --no-startup-id $HOME/.i3/bin/comptonStart.sh
 exec --no-startup-id feh --randomize --bg-fill $HOME/.i3/wallpapers/*
 exec --no-startup-id dropbox-cli start
 
