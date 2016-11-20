@@ -49,7 +49,6 @@ set laststatus=2	" Always have statusbar showing
 set termencoding=utf-8	" ALlow for symbols
 set encoding=utf-8	" moar symbols
 set background=dark
-set cursorline
 
 set t_Co=256
 
