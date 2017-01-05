@@ -49,7 +49,6 @@ set laststatus=2	" Always have statusbar showing
 set termencoding=utf-8	" ALlow for symbols
 set encoding=utf-8	" moar symbols
 set background=dark
-set cursorline
 
 set t_Co=256
 
@@ -117,6 +116,7 @@ map <F4> :setlocal nospell<CR>
 
 " NERD Tree keybindings
 map <C-m> :NERDTreeToggle<CR>
+map <C-t> :CommandT<CR>
 
 " Taglist Toggle
 " map <C-t> :TlistToggle<CR>
@@ -127,10 +127,8 @@ set pastetoggle=<F2>
 syn match tab display "\t"
 hi link tab Error
 
-let g:flake8_cmd="/usr/local/bin/flake8"
+let g:flake8_cmd="/usr/bin/flake8"
 let g:flake8_show_in_gutter=1
 let g:flake8_show_in_file=1
-
-autocmd BufWritePost *.py call Flake8()
 
 let g:CommandTFileScanner='watchman'
