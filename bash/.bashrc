@@ -23,4 +23,5 @@ if [ dircolorsExists = 0 ]; then
 	eval $(dircolors ~/.dircolors)
 fi
 
+set -o vi
 export TERM=xterm-256color

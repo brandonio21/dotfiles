@@ -96,3 +96,5 @@ export WORKON_HOME=~/Dropbox/Python/virtualenvs
 export TERM=xterm-256color
 export VIRTUALENVWRAPPER_SCRIPT=/usr/bin/virtualenvwrapper.sh
 source /usr/bin/virtualenvwrapper_lazy.sh
+
+set -o vi
