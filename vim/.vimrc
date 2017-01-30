@@ -23,6 +23,7 @@ Plug 'https://github.com/rust-lang/rust.vim' "Rust syntax highlighting
 Plug 'https://github.com/kien/ctrlp.vim' "Fuzzy file searcher
 Plug 'https://github.com/brandonio21/vim-async-flake8'
 Plug 'https://github.com/wincent/command-t'
+Plug 'https://github.com/brandonio21/molokai' "Molokai coloscheme with VTE sup
 
 call plug#end()
 filetype plugin indent on
@@ -57,6 +58,8 @@ set t_Co=256
 let g:airline_powerline_fonts=1	"Make powerline symbols show
 let g:airline#extensions#tabline#enabled=1 "Make tabline show up
 let g:netrw_liststyle=3
+
+let g:molokai_vte=1
 
 if ! has('gui_running')
 	set ttimeoutlen=10

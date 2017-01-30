@@ -23,5 +23,9 @@ if [ dircolorsExists = 0 ]; then
 	eval $(dircolors ~/.dircolors)
 fi
 
+setxkbmap -option caps:escape
+
+PATH=$PATH:/home/brandon/.cargo/bin
+
 set -o vi
-export TERM=xterm-256color
+export TERM=screen-256color
