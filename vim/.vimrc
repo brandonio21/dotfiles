@@ -14,7 +14,6 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'https://github.com/bling/vim-airline.git' " Statusbar plugin
 Plug 'https://github.com/vim-airline/vim-airline-themes.git' "Themes for airline
-Plug 'https://github.com/flazz/vim-colorschemes.git' " Colorschemes plugin
 Plug 'https://github.com/scrooloose/nerdtree.git', {'on' : 'NERDTreeToggle' } 
          " ^ NERD Tree to browse files. Setup to load on demand.
 Plug 'https://github.com/ervandew/supertab.git' " Tab completion
@@ -24,6 +23,8 @@ Plug 'https://github.com/kien/ctrlp.vim' "Fuzzy file searcher
 Plug 'https://github.com/brandonio21/vim-async-flake8'
 Plug 'https://github.com/wincent/command-t'
 Plug 'https://github.com/brandonio21/molokai' "Molokai coloscheme with VTE sup
+
+" Plug 'https://github.com/flazz/vim-colorschemes.git' " Colorschemes plugin
 
 call plug#end()
 filetype plugin indent on
@@ -58,8 +59,6 @@ set t_Co=256
 let g:airline_powerline_fonts=1	"Make powerline symbols show
 let g:airline#extensions#tabline#enabled=1 "Make tabline show up
 let g:netrw_liststyle=3
-
-let g:molokai_vte=1
 
 if ! has('gui_running')
 	set ttimeoutlen=10
