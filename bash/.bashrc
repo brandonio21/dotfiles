@@ -28,4 +28,4 @@ setxkbmap -option caps:escape
 PATH=$PATH:/home/brandon/.cargo/bin
 
 set -o vi
-export TERM=screen-256color
+export TERM=xterm-256color
