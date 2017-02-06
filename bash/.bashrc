@@ -28,4 +28,9 @@ setxkbmap -option caps:escape
 PATH=$PATH:/home/brandon/.cargo/bin
 
 set -o vi
-export TERM=xterm-256color
+
+if [ "${TMUX}" == "" ]; then
+  export TERM=xterm-256color
+else
+  export TERM=screen-256color
+fi
