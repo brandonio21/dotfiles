@@ -19,10 +19,9 @@ Plug 'https://github.com/scrooloose/nerdtree.git', {'on' : 'NERDTreeToggle' }
 Plug 'https://github.com/ervandew/supertab.git' " Tab completion
 Plug 'https://github.com/terryma/vim-multiple-cursors.git' "Sublime like cursors
 Plug 'https://github.com/rust-lang/rust.vim' "Rust syntax highlighting
-Plug 'https://github.com/kien/ctrlp.vim' "Fuzzy file searcher
-Plug 'https://github.com/brandonio21/vim-async-flake8'
 Plug 'https://github.com/wincent/command-t'
 Plug 'https://github.com/brandonio21/molokai' "Molokai coloscheme with VTE sup
+Plug 'https://github.com/w0rp/ale.git'
 
 " Plug 'https://github.com/flazz/vim-colorschemes.git' " Colorschemes plugin
 
@@ -129,8 +128,7 @@ set pastetoggle=<F2>
 syn match tab display "\t"
 hi link tab Error
 
-let g:flake8_cmd="/usr/bin/flake8"
-let g:flake8_show_in_gutter=1
-let g:flake8_show_in_file=1
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
 let g:CommandTFileScanner='watchman'
