@@ -23,7 +23,6 @@ if [ dircolorsExists = 0 ]; then
 	eval $(dircolors ~/.dircolors)
 fi
 
-
 PATH=$PATH:/home/brandon/.cargo/bin
 
 set -o vi
