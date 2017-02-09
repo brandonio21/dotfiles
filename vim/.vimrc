@@ -55,6 +55,7 @@ set t_Co=256
 
 " vim-airline settings
 " ---------------------
+let g:airline_theme='molokai'
 let g:airline_powerline_fonts=1	"Make powerline symbols show
 let g:airline#extensions#tabline#enabled=1 "Make tabline show up
 let g:netrw_liststyle=3

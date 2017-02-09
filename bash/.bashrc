@@ -23,7 +23,6 @@ if [ dircolorsExists = 0 ]; then
 	eval $(dircolors ~/.dircolors)
 fi
 
-setxkbmap -option caps:escape
 
 PATH=$PATH:/home/brandon/.cargo/bin
 
