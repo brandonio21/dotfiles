@@ -21,7 +21,7 @@ Plug 'https://github.com/terryma/vim-multiple-cursors.git' "Sublime like cursors
 Plug 'https://github.com/rust-lang/rust.vim' "Rust syntax highlighting
 Plug 'https://github.com/wincent/command-t'
 Plug 'https://github.com/brandonio21/molokai' "Molokai coloscheme with VTE sup
-Plug 'https://github.com/w0rp/ale.git'
+Plug 'https://github.com/w0rp/ale'
 
 " Plug 'https://github.com/flazz/vim-colorschemes.git' " Colorschemes plugin
 
@@ -131,5 +131,6 @@ hi link tab Error
 
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
+let g:ale_sign_column_always=1
 
 let g:CommandTFileScanner='watchman'
