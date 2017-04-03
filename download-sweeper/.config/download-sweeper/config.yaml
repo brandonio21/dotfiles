@@ -1,0 +1,12 @@
+archive_directories: ['/data/brandon/Downloads/archive']
+archive_downloads: true
+archive_stale_after: 30d
+compress_archives: true
+delete_from_purge: true
+download_directories: ['/home/brandon/Downloads']
+download_stale_after: 30d
+move_to_all_archive_dirs: true
+move_to_all_purge_dirs: true
+purge_archives: true
+purge_directories: ['/data/brandon/Downloads/purge']
+purge_stale_after: 1d
