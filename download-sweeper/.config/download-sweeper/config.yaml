@@ -10,3 +10,4 @@ move_to_all_purge_dirs: true
 purge_archives: true
 purge_directories: ['/data/brandon/Downloads/purge']
 purge_stale_after: 1d
+blacklisted_paths: []
