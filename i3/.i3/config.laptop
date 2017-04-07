@@ -192,6 +192,6 @@ for_window [class="^.*"] border pixel 2
 
 exec --no-startup-id redshift &
 exec --no-startup-id $HOME/.i3/bin/comptonStart.sh
-exec --no-startup-id feh --randomize --bg-fill $HOME/.i3/wallpapers/*
+exec --no-startup-id walle.py
 exec --no-startup-id dropbox-cli start
 

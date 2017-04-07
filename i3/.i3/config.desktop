@@ -199,7 +199,7 @@ workspace 9 output DVI-I-1
 
 exec --no-startup-id redshift &
 exec --no-startup-id $HOME/.i3/bin/comptonStart.sh
-exec --no-startup-id feh --randomize --bg-fill $HOME/.i3/wallpapers/*
+exec --no-startup-id walle.py
 exec --no-startup-id dropbox-cli start
 exec --no-startup-id xset m 00
 exec --no-startup-id i3-msg 'workspace 2; exec termite -e weechat'
