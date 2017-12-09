@@ -58,6 +58,9 @@ TEXT
 	   { "full_text" : "${font FontAwesome}${font} ${battery_percent BAT0}% (${battery_time BAT0})", "color" : "\#839496" },
    ${endif}
 
+   # Brightness settings
+   { "full_text" : "${font FontAwesome} ${font} ${exec ~/.i3/bin/getBrightness.sh}", "color" : "\#839496" },
+
    { "full_text" : "RAM ${memperc}%", "color" : 
    	${if_match ${memperc}<90}
 		"\#839496"
