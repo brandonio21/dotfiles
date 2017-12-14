@@ -21,6 +21,13 @@ do
   status=$(cat $l);
   dev=$(echo $dir | cut -d\- -f 2- | sed 's/-/_/g');
 
+  #Special case: If the display is DP-(2+x), it's actually DP-2-x
+  num=$(echo $dev | cut -d\_ -f 2-)
+  if [[ $num -gt 2 ]]
+  then
+    dev=$(echo $dev | sed "s/_.*/_2_$(expr $num - 2)/")
+  fi
+
   if [ "connected" == "$status" ]
   then
     echo $dev "connected"
@@ -28,8 +35,6 @@ do
   fi
 done <<< "$DEVICES"
 
-# Lenovo laptop configuration 
-# Main display is eDP-1 and HDMI display is DP-2-1 (for some reason)
 if [ ! -z "$eDP_1" -a ! -z "$DP_2_1" ]
 then
   echo "eDP-1 and DP-2-1 are plugged in"
