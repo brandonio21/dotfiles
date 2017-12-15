@@ -40,9 +40,11 @@ then
   echo "eDP-1 and DP-2-1 are plugged in"
   xrandr --output eDP-1 --auto --primary --output DP-2-1 --auto --left-of eDP-1
   feh --bg-fill --randomize /home/bmilton/wallpapers
+  setxkbmap -option caps:escape
 elif [ ! -z "$eDP_1" -a -z "$DP_2_1" ]
 then
   echo "eDP-1 is plugged in, but not DP-2-1"
   xrandr --output eDP-1 --auto --primary --output DP-2-1 --off
   feh --bg-fill --randomize /home/bmilton/wallpapers
+  setxkbmap -option caps:escape
 fi
