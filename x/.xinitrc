@@ -45,4 +45,5 @@ if [ $monitor_res -gt 1080 ]; then
   fi
 fi
 
+/usr/local/bin/monitor-hotplug.sh
 exec i3

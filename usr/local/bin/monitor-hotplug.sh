@@ -52,7 +52,7 @@ elif [ "$(hostname)" == "r4-arch" ]; then
   if [ ! -z "$DVI_D_0" -a ! -z "$HDMI_0" ]
   then
     echo "DVI-D-0 and HDMI-0 are plugged in"
-    xrandr --output HDMI-0 --rotate normal --auto --primary --output DVI-D-0 --rotate left --auto
+    xrandr --output HDMI-0 --rotate normal --auto --primary --output DVI-D-0 --rotate left --auto --left-of HDMI-0
   elif [ ! -z "$HDMI_0" -a -z "$DVI_D_0" ]
   then
     echo "HDMI-0 is plugged in, but not DVI-D-0"
