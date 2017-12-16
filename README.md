@@ -50,6 +50,4 @@ Screenshots
 -----------
 ![Bare Desktop](screenshots/bare.png)
 
-![Launching a program](screenshots/busylaunch.png)
-
-![Viewing Top](screenshots/top.png)
+![Busy...](screenshots/top.png)
