@@ -25,7 +25,7 @@ do
   dev=$(echo $dir | sed 's/-/_/g');
 
   #Special case: If the display is DP-(2+x), it's actually DP-2-x
-  num=$(echo $dev | cut -d\_ -f 2-)
+  num=$(echo $dev | cut -d\_ -f 3-)
   if [[ $num -gt 2 ]]
   then
     dev=$(echo $dev | sed "s/_.*/_2_$(expr $num - 2)/")
@@ -60,5 +60,4 @@ elif [ "$(hostname)" == "r4-arch" ]; then
   fi
 fi
 
-walle.py
 setxkbmap -option caps:escape
