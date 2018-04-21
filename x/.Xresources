@@ -12,3 +12,5 @@ rofi.color-active:                   argb:00272822, #a6e22a, argb:00272822, #141
 rofi.color-window:                   argb:ee272822, #002b36, #e6db74
 ! "Separator style (none, dash, solid)" Set from: File
 rofi.separator-style:                solid
+
+! Xft.dpi:125
