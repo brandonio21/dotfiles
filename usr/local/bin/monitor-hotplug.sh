@@ -39,14 +39,18 @@ do
 done <<< "$DEVICES"
 
 if [ "$(hostname)" == "bmiltonlenovo" ]; then
-  if [ ! -z "$eDP_1" -a ! -z "$DP_2_1" ] 
+  if [ ! -z "$eDP_1" -a ! -z "$DP_2_1" -a ! -z "$DP_2_2" ]
   then
-    echo "eDP-1 and DP-2-1 are plugged in"
-    xrandr --output eDP-1 --auto --primary --output DP-2-1 --auto --left-of eDP-1
-  elif [ ! -z "$eDP_1" -a -z "$DP_2_1" ]
+    echo "eDP-1 and DP-2-1 and DP-2-2 are plugged in"
+    xrandr --output eDP-1 --auto --primary --output DP-2-1 --auto --right-of eDP-1 --output DP-2-2 --auto --right-of DP-2-1 --rotate right
+  elif [ ! -z "$eDP_1" -a -z "$DP_2_1" -a -z "$DP_2_2" ]
   then
-    echo "eDP-1 is plugged in, but not DP-2-1"
-    xrandr --output eDP-1 --auto --primary --output DP-2-1 --off
+    echo "eDP-1 is plugged in, but not DP-2-1 nor DP-2-2"
+    xrandr --output eDP-1 --auto --primary --output DP-2-1 --off --output DP-2-2 --off
+  elif [ ! -z "$eDP_1" -a ! -z "$DP_2_1" -a -z "$DP_2_2" ]
+  then
+    echo "eDP-1 and DP-2-1 are plugged in, but not DP-2-2"
+    xrandr --output eDP-1 --auto --primary --output DP-2-1 --auto --right-of eDP-1 --output DP-2-2 --off
   fi
 elif [ "$(hostname)" == "r4-arch" ]; then
   if [ ! -z "$DVI_D_0" -a ! -z "$HDMI_0" ]

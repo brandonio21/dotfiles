@@ -10,7 +10,7 @@ if [ -f ~/.bashrc_work ]; then
 fi
 
 alias ls='ls --color=auto'
-alias e=$EDITOR
+alias e='vim'
 PS1='[\u@\h \W]\$ '
 
 export PROMPT_COMMAND='echo -ne "\033]0;$PWD\007"'
