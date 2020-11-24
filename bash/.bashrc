@@ -77,31 +77,3 @@ lastchef() {
   echo Last Success: "${success}"
   echo Last Fail:    "${fail}"
 }
-
-monitor-connect() {
-  xrandr --output eDP-1 --auto --output DP-2-1 --auto --left-of eDP-1
-  feh --bg-fill --randomize /home/bmilton/wallpapers
-}
-
-monitor-disconnect() {
-  xrandr --output DP-2-1 --off
-  feh --bg-fill --randomize /home/bmilton/wallpapers
-}
-
-journal() {
-  mkdir -p $HOME/.journals
-  file="$HOME/.journals/$(date +%Y%m%d).md"
-  if [ ! -f $file ]; then
-    cat > $file <<EOF
-Journal Entry for $(date +'%B %d, %Y')
-===========================================
-Problem:
-
-Solution:
-
-
-EOF
-  fi
-  $EDITOR $file
-}
-
