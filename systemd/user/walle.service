@@ -1,8 +1,0 @@
-[Unit]
-Description=Walle Wallpaper Grabber
-After=network-online.target
-
-[Service]
-Type=oneshot
-EnvironmentFile=/home/brandon/.config/walle/walle.conf
-ExecStart=/home/brandon/Dropbox/Rust/projects/walle/target/debug/walle $WALLPAPERDIR $WALLPAPERSJSON $URLSFILE

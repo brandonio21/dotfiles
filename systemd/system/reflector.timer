@@ -1,9 +1,0 @@
-[Unit]
-Description=Runs Reflector after one minute
-
-[Timer]
-OnBootSec=1min
-Unit=reflector.service
-
-[Install]
-WantedBy=multi-user.target
