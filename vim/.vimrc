@@ -216,3 +216,8 @@ map <leader>t :call SplitTargets()<CR>
 map ,e :e <C-R>=expand("%:p:h") . "/" <CR>
 map ,s :split <C-R>=expand("%:p:h") . "/" <CR>
 map ,v :vsplit <C-R>=expand("%:p:h") . "/" <CR>
+
+" By default, vim will indent after typing :
+" this is especially annoying with type annotations, so here I remove it
+autocmd FileType python setlocal indentkeys-=<:>
+autocmd FileType python setlocal indentkeys-=:
