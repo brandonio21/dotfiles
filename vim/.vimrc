@@ -25,6 +25,7 @@ Plug 'https://github.com/nvie/vim-flake8'
 Plug 'https://github.com/jlanzarotta/bufexplorer'
 
 " Plug 'https://github.com/flazz/vim-colorschemes.git' " Colorschemes plugin
+Plug 'https://github.com/vim-scripts/a.vim'
 
 call plug#end()
 filetype plugin indent on
