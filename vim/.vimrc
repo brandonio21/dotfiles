@@ -201,3 +201,18 @@ map ,b <leader>bs
 map ,e :e <C-R>=expand("%:p:h") . "/" <CR>
 map ,s :split <C-R>=expand("%:p:h") . "/" <CR>
 map ,v :vsplit <C-R>=expand("%:p:h") . "/" <CR>
+
+function! SplitTargets()
+    let tp = findfile("TARGETS", ".;")
+    if tp == ""
+            echo "TARGETS Not Found"
+    else
+            exe "split " . tp
+    endif
+endfunction
+
+map <leader>t :call SplitTargets()<CR>
+
+map ,e :e <C-R>=expand("%:p:h") . "/" <CR>
+map ,s :split <C-R>=expand("%:p:h") . "/" <CR>
+map ,v :vsplit <C-R>=expand("%:p:h") . "/" <CR>
